@@ -6,8 +6,8 @@
 <% } else if (type === "user") { %>
 <button class="btn-user"><%= name %></button>
 <% } else if (type == "cart"){ %>
-<a href="/cart" class="btn-cart">
-  <img src="/svg/cart.svg" alt="Carrito" />
+<button class="btn-cart">
+  <img src="svg/cart.svg" alt="Carrito" />
   <%- include("./cart-badge", {quantity: 3}) %>
-</a>
+</button>
 <% } %>
